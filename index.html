@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mncnf</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 24px 32px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #6e6e73;
+      margin-top: 4px;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #6e6e73;
+      margin-bottom: 20px;
+    }
+
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      background: #e9e9eb;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .app-meta h2 {
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .app-meta .category {
+      font-size: 13px;
+      color: #6e6e73;
+      margin-top: 2px;
+    }
+
+    .app-description {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #3a3a3c;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+
+    .badge {
+      font-size: 12px;
+      color: #6e6e73;
+      background: #f5f5f7;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    .app-store-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: opacity 0.15s;
+    }
+
+    .app-store-btn:hover { opacity: 0.75; }
+
+    .app-store-btn svg {
+      width: 14px;
+      height: 14px;
+      fill: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 13px;
+      color: #aeaeb2;
+    }
+
+    footer a {
+      color: #aeaeb2;
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>mncnf</h1>
+    <p>Apps for everyday use</p>
+  </header>
+
+  <main>
+    <p class="section-title">Apps</p>
+
+    <div class="apps">
+
+      <!-- Pasty -->
+      <div class="card">
+        <div class="card-header">
+          <div class="app-icon">
+            <img src="/assets/icons/pasty.svg" alt="Pasty icon">
+          </div>
+          <div class="app-meta">
+            <h2>Pasty</h2>
+            <p class="category">Utilities · Free</p>
+          </div>
+        </div>
+        <p class="app-description">
+          よく使うテキストやハッシュタグを登録して、ワンタップでコピー。SNSの投稿やメールの定型文をすばやく呼び出せます。
+        </p>
+        <div class="card-footer">
+          <span class="badge">iOS 13.0+</span>
+          <a class="app-store-btn" href="https://apps.apple.com/app/pasty/id6759287072" target="_blank" rel="noopener">
+            <svg viewBox="0 0 814 1000"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 376.7 0 246.8 0 121.9 0 55.1 21.4 9.3 60 9.3c23.4 0 44.9 16 71.9 16 27 0 48.4-16 82.2-16 47.4 0 91.7 30.4 128.1 30.4 36.4 0 80.7-30.4 128.1-30.4 26.9 0 48.4 16 71.9 16 27 0 48.4-16 82.2-16C616.6 9.3 638 55.1 638 121.9c0 68.2-41.8 187.5-108.2 262.9 45.2-13.4 88.9-33.1 130.3-52.8 41.4-19.7 83.2-39.5 124.6-52.8l3.4 61.7z"/></svg>
+            App Store
+          </a>
+        </div>
+      </div>
+
+      <!-- 将来のアプリを追加する場合はここにカードを追加 -->
+
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2025 mncnf &nbsp;·&nbsp;
+      <a href="/pasty-privacy-policy">Privacy Policy (Pasty)</a>
+    </p>
+  </footer>
+
+</body>
+</html>
