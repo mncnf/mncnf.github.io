@@ -117,25 +117,16 @@
     }
 
     .app-store-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #000;
-      color: #fff;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 500;
-      padding: 8px 16px;
-      border-radius: 20px;
+      display: inline-block;
       transition: opacity 0.15s;
     }
 
     .app-store-btn:hover { opacity: 0.75; }
 
-    .app-store-btn svg {
-      width: 14px;
-      height: 14px;
-      fill: #fff;
+    .app-store-btn img {
+      height: 32px;
+      width: auto;
+      display: block;
     }
 
     footer {
@@ -182,8 +173,7 @@
         <div class="card-footer">
           <span class="badge">iOS 13.0+</span>
           <a class="app-store-btn" href="https://apps.apple.com/app/pasty/id6759287072" target="_blank" rel="noopener">
-            <svg viewBox="0 0 814 1000"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 376.7 0 246.8 0 121.9 0 55.1 21.4 9.3 60 9.3c23.4 0 44.9 16 71.9 16 27 0 48.4-16 82.2-16 47.4 0 91.7 30.4 128.1 30.4 36.4 0 80.7-30.4 128.1-30.4 26.9 0 48.4 16 71.9 16 27 0 48.4-16 82.2-16C616.6 9.3 638 55.1 638 121.9c0 68.2-41.8 187.5-108.2 262.9 45.2-13.4 88.9-33.1 130.3-52.8 41.4-19.7 83.2-39.5 124.6-52.8l3.4 61.7z"/></svg>
-            App Store
+            <img src="assets/badges/app-store.svg" alt="Download on the App Store">
           </a>
         </div>
       </div>
