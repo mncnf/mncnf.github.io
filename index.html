@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mncnf</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 24px 32px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #6e6e73;
+      margin-top: 4px;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #6e6e73;
+      margin-bottom: 20px;
+    }
+
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      background: #e9e9eb;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .app-meta h2 {
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .app-meta .category {
+      font-size: 13px;
+      color: #6e6e73;
+      margin-top: 2px;
+    }
+
+    .app-description {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #3a3a3c;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+
+    .badge {
+      font-size: 12px;
+      color: #6e6e73;
+      background: #f5f5f7;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    .app-store-btn {
+      display: inline-block;
+      transition: opacity 0.15s;
+    }
+
+    .app-store-btn:hover { opacity: 0.75; }
+
+    .app-store-btn img {
+      height: 32px;
+      width: auto;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 13px;
+      color: #aeaeb2;
+    }
+
+    footer a {
+      color: #aeaeb2;
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>mncnf</h1>
+    <p>Apps for everyday use</p>
+  </header>
+
+  <main>
+    <p class="section-title">Apps</p>
+
+    <div class="apps">
+
+      <!-- Pasty -->
+      <div class="card">
+        <div class="card-header">
+          <div class="app-icon">
+            <img src="assets/icons/pasty.svg" alt="Pasty icon">
+          </div>
+          <div class="app-meta">
+            <h2>Pasty</h2>
+            <p class="category">Utilities · Free</p>
+          </div>
+        </div>
+        <p class="app-description">
+          よく使うテキストやハッシュタグを登録して、ワンタップでコピー。SNSの投稿やメールの定型文をすばやく呼び出せます。
+        </p>
+        <div class="card-footer">
+          <span class="badge">iOS 13.0+</span>
+          <a class="app-store-btn" href="https://apps.apple.com/app/pasty/id6759287072" target="_blank" rel="noopener">
+            <img src="assets/badges/app-store.svg" alt="Download on the App Store">
+          </a>
+        </div>
+      </div>
+
+      <!-- 将来のアプリを追加する場合はここにカードを追加 -->
+
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2025 mncnf &nbsp;·&nbsp;
+      <a href="/pasty-privacy-policy">Privacy Policy (Pasty)</a>
+    </p>
+  </footer>
+
+</body>
+</html>
